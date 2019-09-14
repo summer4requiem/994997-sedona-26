@@ -22,10 +22,70 @@
         </nav>
     </header>
     <main>
+        <div class="hotel-filters">
+
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <input id="appointment-swimming-pool" type="checkbox" name="swimming-pool" checked>
+                            <label for="appointment-swimming-pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input id="appointment-parking" type="checkbox" name="parking">
+                            <label for="appointment-parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input id="appointment-wi-fi" type="checkbox" name="wi-fi">
+                            <label for="appointment-wi-fi">Wi-fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <input id="hotel" type="checkbox" name="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input id="luxurious-hotel" type="checkbox" name="parking" checked>
+                            <label for="luxurious-hotel">Отель</label>
+                        </li>
+                        <li>
+                            <input id="apartment" type="checkbox" name="wi-fi" checked>
+                            <label for="apartment">Аппартементы</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>Стоимость в сутки (Р):</p>
+                <p>
+                    <output for="costs">от 0</output>
+                    <output for="costs">до 3000</output>
+                </p>
+                0<input type="range" name="costs" min="0" max="300">300
+                <p>
+                    <a href="">Показать</a>
+                </p>
+                <div>
+                    <h3>Найдено:3</h3>
+                    <p>сортировка:
+                        <button type="button">По цене</button>
+
+                        <button type="button">По типу</button>
+
+                        <button type="button">По рейтингу</button>
+                    </p>
+                </div>
+            </form>
+
+        </div>
 
         <ul>
             <li>
-                <p>Amara Resort & Spa</p>
+                <p><a href="#">Amara Resort & Spa</a></p>
                 <a href="#">
                     <img src="img/amara.png" alt="Фото гостиницы в горах" width="135" height="90">
                 </a>
@@ -41,13 +101,13 @@
             </li>
 
             <li>
-                <p>ADesert Quail Inn</p>
+                <p><a href="#">ADesert Quail Inn</a></p>
                 <a href="#">
                     <img src="img/desert.png" alt="Фото гостиницы в горах" width="135" height="90">
                 </a>
 
 
-                <p гостиница от 3000 р.</p>
+                <p> гостиница от 3000 р. </p>
                 <p><a href="#">подробнее</a></p>
                 <p><a href="#">забронировать</a></p>
                 <div>
@@ -57,7 +117,7 @@
             </li>
 
             <li>
-                <p>Villas at Poco Diablo</p>
+                <p><a href="#">Villas at Poco Diablo</a></p>
                 <a href="#">
                     <img src="img/villas.png" alt="Фото гостиницы в горах" width="135" height="90">
                 </a>

@@ -24,52 +24,150 @@
 
   <main>
     <section>
-      <img src="img/background-photo.jpg" width=1200  alt="Большой каньон">
+      <img src="img/background-photo.jpg" width="1200" alt="Большой каньон">
       <h2>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
+
+
+
     <section>
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предпалагемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <h3>Настоящий городок</h3>
+      <p> — №1 —</p>
+      <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
       <div>
-        <h3>Поиск гостиницы в Седоне</h3>
-        <!-- тут будет форма
-        тут будет форма  -->
-        <button>найти</button>
+        <img src="img/2-main-picture.jpg" alt="" width="800" height="160">
+      </div>
+    </section>
+    <section>
+      <ul>
+        <li><img src="img/house.svg" alt="Рекомендуем пожить в настоящем мотеле!" width="75" height="72">
+          <p>Жилье</p>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li><img src="img/burger.svg" alt="Заказывайте фирменный бургер" width="75" height="72">
+          <p>Еда</p>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li>
+          <img src="img/gift.svg" alt="У нас есть сувениры местного производства!" width="75" height="72">
+          <p>Сувениры</p>
+          <p>Не только китайского, но и местного производства</p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <div>
+        <img src="img/ canyon.jpg" alt="У нас можно пройтись по мосту дьявола" width="800" height="160">
+      </div>
+      <p>Там есть
+        Мост дьявола</p>
+      <p> — №2 —</p>
+      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    </section>
+    <section>
+      <ul>
+        <li>
+          <p>Небольшая
+            площадь</p>
+          <p>— №3 —</p>
+          <p>Все достопримечательности
+            находятся очень близко</p>
+        </li>
+
+        <li>
+          <p>Красивая
+            дорога
+          </p>
+          <p>
+            <p>— №4 —</p>
+          </p>
+          <p>Ехать в Седону из Лас-Вегаса совсем
+            не скучно!</p>
+        </li>
+
+        <li>
+          <p>Мало
+            туристов
+          </p>
+          <p>
+            <p>— №4 —</p>
+          </p>
+          <p>Большинство едет в гранд каньон
+            и толпится там</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+
+      <p>Заинтересовались?</p>
+      <p>Укажите предпалагемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+      <p>
+        <img src="img/map.png" alt="Адрес туристического комплекса по адресу ул.Загородный  26, Санкт-Петербург"
+          width="1200" height="583">
+      </p>
+
+      <div> 
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset>
+            <legend>
+              </h3>Поиск гостиницы в Седоне</h3>
+            </legend>
+            <label for="data-time">Дата заезда</label>
+            <input id="data-time" type="text" name="data" placeholder="24 апреля 2017" value="">
+            <p>
+              <label for="departure">Дата выезда</label>
+              <input type="text" name="departure" placeholder="4 июля 2017" value="">
+            </p>
+
+            <label for="adult">Взрослые</label>
+            <input id="adult" type="number" min="2" max="5" placeholder="2" value="" name="adult">
+
+
+            <label for="children">Дети</label>
+            <input type="number" name="children" min="2" max="7" placeholder="0" value="">
+            <p>
+              <button type="submit">Найти</button>
+            </p>
+          </fieldset>
+        </form>
       </div>
     </section>
 
   </main>
   <footer>
-      <div>
-          <a href="#">#visitSEDONA</a>
-      </div>
-      <div>
-          <ul>
-              <li>
-                  <a href="#">
-                      <img src="img/twitter.svg" alt="twitter" width="15" height="15">
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <img src="img/fb.svg" alt="facebook" width="15" height="15">
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <img src="img/youtube.svg" alt="youtube" width="15" height="15">
-                  </a>
-              </li>
-          </ul>
-      </div>
-      <div>
-          <span>Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-              <img src="img/htmlacademy.svg" alt="HTML Академия" width="115" height="41">
+    <div>
+      <a href="#">#visitSEDONA</a>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/twitter.svg" alt="twitter" width="15" height="15" aria-label="Седона в твитере">
           </a>
-      </div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/fb.svg" alt="facebook" width="15" height="15"  aria-label="Седона на Фейсбуке">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/youtube.svg" alt="youtube" width="15" height="15" aria-label="Седона на Ютубе">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <img src="img/htmlacademy.svg" alt="HTML Академия" width="115" height="41">
+      </a>
+    </div>
   </footer>
 </body>
 
