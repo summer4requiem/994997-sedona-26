@@ -8,16 +8,16 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-label="содержимое сайта">
       <a href="index.html">
         <img src="img/logo.svg" width="139" height="71" alt="Седона">
       </a>
-      <h1>Поиск жилья в маленьком американском городке!</h1>
+      <h1 class="visually-hidden">Поиск жилья в маленьком американском городке!</h1>
       <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="inner.html">Гостиницы</a></li>
+        <li><a href="#" aria-label="Информацция">Информация</a></li>
+        <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
+        <li><a href="#"aria-label="Расположение">Карта штата</a></li>
+        <li><a href="inner.html" aria-label="Гостиницы">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -42,6 +42,7 @@
       </div>
     </section>
     <section>
+      <h2 class="visually-hidden">Преимущетсва отдыха у нас</h2>
       <ul>
         <li><img src="img/house.svg" alt="Рекомендуем пожить в настоящем мотеле!" width="75" height="72">
           <p>Жилье</p>
@@ -117,11 +118,11 @@
             <legend>
               </h3>Поиск гостиницы в Седоне</h3>
             </legend>
-            <label for="data-time">Дата заезда</label>
-            <input id="data-time" type="text" name="data" placeholder="24 апреля 2017" value="">
+            <label for="date">Дата заезда</label>
+            <input id="date" type="text" name="data" placeholder="24 апреля 2017" value="">
             <p>
               <label for="departure">Дата выезда</label>
-              <input type="text" name="departure" placeholder="4 июля 2017" value="">
+              <input id="departure" type="text" name="departure" placeholder="4 июля 2017" value="">
             </p>
 
             <label for="adult">Взрослые</label>

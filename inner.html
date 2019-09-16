@@ -8,22 +8,21 @@
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="содержимое сайта">
             <a href="index.html">
                 <img src="img/logo.svg" width="139" height="71" alt="Седона">
             </a>
-            <h1>Поиск гостиницы!</h1>
+            <h1 class="visually-hidden">Поиск жилья в маленьком американском городке!</h1>
             <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="inner.html">Гостиницы</a></li>
+                <li><a href="#" aria-label="Информацция">Информация</a></li>
+                <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
+                <li><a href="#" aria-label="Расположение">Карта штата</a></li>
+                <li><a href="inner.html" aria-label="Гостиницы">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="hotel-filters">
-
             <form action="https://echo.htmlacademy.ru" method="POST">
                 <fieldset>
                     <legend>Инфраструктура:</legend>
@@ -51,11 +50,11 @@
                             <label for="hotel">Гостиница</label>
                         </li>
                         <li>
-                            <input id="luxurious-hotel" type="checkbox" name="parking" checked>
+                            <input id="luxurious-hotel" type="checkbox" name="luxurious-hotel" checked>
                             <label for="luxurious-hotel">Отель</label>
                         </li>
                         <li>
-                            <input id="apartment" type="checkbox" name="wi-fi" checked>
+                            <input id="apartment" type="checkbox" name="apartments" checked>
                             <label for="apartment">Аппартементы</label>
                         </li>
                     </ul>
@@ -65,21 +64,26 @@
                     <output for="costs">от 0</output>
                     <output for="costs">до 3000</output>
                 </p>
-                0<input type="range" name="costs" min="0" max="300">300
+                <input id="price-range" type="range" name="price-range">
+                <div id="slider-range"></div>
                 <p>
-                    <a href="">Показать</a>
+                    <button type="button">Показать</button>
                 </p>
-                <div>
-                    <h3>Найдено:3</h3>
-                    <p>сортировка:
-                        <button type="button">По цене</button>
-
-                        <button type="button">По типу</button>
-
-                        <button type="button">По рейтингу</button>
-                    </p>
-                </div>
             </form>
+            <div>
+                <h3>Найдено:3</h3>
+                <p>сортировка:
+                    <button type="button">По цене</button>
+                    <button type="button">По типу</button>
+                    <button type="button">По рейтингу</button>
+                </p>
+                <!-- Сортировка по возростанию/убывнию -->
+                <div>
+                    <button type="button"><img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию"></button>
+                    <button type="button"><img src="img/icon-down-dir.svg" alt="Сортировать по убыванию"></button>
+                </div>
+            </div>
+
 
         </div>
 
@@ -134,7 +138,6 @@
         </ul>
 
     </main>
-
     <footer>
         <div>
             <a href="#">#visitSEDONA</a>
@@ -143,17 +146,17 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="img/twitter.svg" alt="twitter" width="15" height="15">
+                        <img src="img/twitter.svg" alt="twitter" width="15" height="15" aria-label="Седона в твитере">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/fb.svg" alt="facebook" width="15" height="15">
+                        <img src="img/fb.svg" alt="facebook" width="15" height="15"  aria-label="Седона на Фейсбуке">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/youtube.svg" alt="youtube" width="15" height="15">
+                        <img src="img/youtube.svg" alt="youtube" width="15" height="15" aria-label="Седона на Ютубе">
                     </a>
                 </li>
             </ul>
@@ -165,6 +168,7 @@
             </a>
         </div>
     </footer>
+
 </body>
 
 </html>
