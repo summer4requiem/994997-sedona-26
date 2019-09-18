@@ -1,5 +1,5 @@
 * {
-    box-shadow: 0 0 0 3x black;
+    box-shadow: 0 0 0 1px yellowgreen;
 }
 
 body {
@@ -27,6 +27,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.main-picture-section {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -130,6 +135,7 @@ a {
     margin: 0;
     list-style: none;
     text-align: center;
+    background-color: #eeeeee;
 }
 
 .exelence-item-two {
@@ -155,7 +161,6 @@ a {
 
 .reservation {
     text-align: center;
-    height: 288px;
     width: 1200px;
     margin: 0 auto;
 
@@ -254,53 +259,62 @@ a {
     list-style: none;
 }
 
-.hotels{
+.hotels {
     list-style: none;
-   
+
 }
-.hotel-name a{
+
+.hotel-name a {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
 }
 
-.hotel-name a:hover{
-     color: #81b3d2;
+.hotel-name a:hover {
+    color: #81b3d2;
 }
-.hotel-name a:active{
+
+.hotel-name a:active {
     color: rgba(0, 0, 0, 0.3);
 }
-.hotels .button-details{
-    color:#ffffff;
+
+.hotels .button-details {
+    color: #ffffff;
     background-color: #81b3d2;
     padding: 5px 15px;
     line-height: 26px;
     font-weight: bold;
 }
-.button-details:hover{
-background-color: #669ec0;
+
+.button-details:hover {
+    background-color: #669ec0;
 }
-.button-details:active{
+
+.button-details:active {
     background-color: #5496bd;
     color: #84b4d0;
-    }
-.hotels .button-order{
-    color:#ffffff;
+}
+
+.hotels .button-order {
+    color: #ffffff;
     background-color: #766357;
     padding: 5px 15px;
     line-height: 26px;
     font-weight: bold;
 }
-.button-order:hover{
+
+.button-order:hover {
     background-color: #604e43;
-  
+
 }
-.button-order:active{
+
+.button-order:active {
     background-color: #503e33;
     color: #857871;
 }
-.hotels .rating{
-    line-height:21px;
+
+.hotels .rating {
+    line-height: 21px;
     color: #666666;
     background-color: #f2f2f2;
     padding: 5px 15px;
