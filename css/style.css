@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     box-shadow: 0 0 0 1px yellowgreen;
 }
 
@@ -24,6 +25,16 @@ body {
     margin: -1px;
 
 }
+
+.main-header {
+    min-height: 56px;
+}
+
+.main-header-logo {
+    align-self: center;
+    position: absolute;
+}
+
 
 a {
     text-decoration: none;
@@ -56,15 +67,36 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.main-navigation-wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 56px;
+    background-color: pink;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    justify-content: initial;
+    padding-left: 73px;
+    padding-right: 73px;
+
 }
 
+
+
 .site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 1056px;
     list-style: none;
+    min-height: 56px;
+    justify-content: space-between;
 }
 
 .site-navigation a {
@@ -87,7 +119,11 @@ a {
 }
 
 .main-columns {
-    background-color: #81b3d2;
+    display: flex;
+    margin-top: 58px;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
 }
 
 
@@ -95,6 +131,12 @@ a {
 .main-columns .introductory-information {
     color: #ffffff;
     text-align: center;
+    background-color: #81b3d2;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .introductory-information h3 {
@@ -103,8 +145,25 @@ a {
 
 
 .exelence-list {
+    display: flex;
     list-style: none;
     text-align: center;
+    width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    margin: auto;
+}
+
+.exelence-item {
+    width: 400px;
+    min-height: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 86px;
+
 }
 
 .exelence-item h4 {
@@ -118,9 +177,6 @@ a {
     color: #333333;
 }
 
-
-
-
 .exelence-item h4 {
     font-weight: bold;
     font-size: 21px;
@@ -132,14 +188,24 @@ a {
 }
 
 .exelence-list-two {
-    margin: 0;
     list-style: none;
     text-align: center;
-    background-color: #eeeeee;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    width: 1200px;
+    padding-left: 0;
+    margin: 0 auto;
+
 }
 
 .exelence-item-two {
     background-color: #eeeeee;
+    width: 400px;
+    min-height: 255px;
+    padding-top: 49px;
+    padding-bottom: 55px;
 }
 
 
@@ -149,9 +215,22 @@ a {
 
 
 .devil-bridge {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
+
+}
+
+.devil-bridge-information {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 46px;
+
 }
 
 .devil-bridge h4 {
@@ -163,6 +242,8 @@ a {
     text-align: center;
     width: 1200px;
     margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 55px;
 
 }
 
@@ -206,12 +287,53 @@ a {
 
 .main-footer {
     background-color: rgba(255, 255, 255, 0.9);
+    min-height: 121px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.footer-social ul {
+    width: 150px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer-social .soc-icon {
+    display: inline-block;
+    width: 48px;
+    height: 46px;
+    background-color: #84b4d0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.soc-icon.soc-icon-fb {
+    background-image: url("/img/fb.svg");
+}
+
+.soc-icon.soc-icon-tw {
+    background-image: url("/img/twitter.svg");
+}
+
+.soc-icon.soc-icon-youtube {
+    background-image: url("/img/youtube.svg");
+}
+
+
 
 .footer-contacts a {
     text-transform: uppercase;
     color: #000000;
     font-size: 21px;
+    font-weight: bold;
 }
 
 
@@ -223,22 +345,29 @@ a {
     list-style: none;
 }
 
-.footer-social a {
-    background-color: #81b3d2;
-}
 
 .footer-social a:hover {
     background-color: #669ec0;
 }
 
 .footer-social a:active {
-    background-color: #5496bd;
+    background-color: #88b6d1;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright {
+    display: flex;
+    width: 197px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 .footer-copyright span {
     text-transform: uppercase;
 }
+
 
 .hotel-filters {
     background-image: url("/img/filter\ background.jpg ");
@@ -319,4 +448,10 @@ a {
     background-color: #f2f2f2;
     padding: 5px 15px;
     font-size: 14px;
+
+}
+
+.map {
+    width: 1200px;
+    margin: 0 auto;
 }

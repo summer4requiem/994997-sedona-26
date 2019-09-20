@@ -12,18 +12,19 @@
 
 <body>
     <header class="main-header">
-        <nav class="main-navigation" aria-label="содержимое сайта">
-            <a href="index.html" class="main-header-logo">
-                <img src="img/logo.svg" width="139" height="71" alt="Седона">
-            </a>
-            <!-- <h1 class="visually-hidden">Поиск жилья в маленьком американском городке!</h1> -->
-            <ul class="site-navigation">
-                <li><a href="#" aria-label="Информацция">Информация</a></li>
-                <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
-                <li><a href="#" aria-label="Расположение">Карта штата</a></li>
-                <li><a href="inner.html" aria-label="Гостиницы">Гостиницы</a></li>
-            </ul>
-        </nav>
+        <div class="main-navigation-wrapper">
+            <nav class="main-navigation" aria-label="содержимое сайта">
+                <a href="index.html" class="main-header-logo">
+                    <img src="img/logo.svg" width="139" height="71" alt="Седона">
+                </a>
+                <h1 class="visually-hidden">Поиск жилья в маленьком американском городке!</h1>
+                <ul class="site-navigation">
+                    <li><a href="#" aria-label="Информацция">Информация</a></li>
+                    <li><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
+                    <li><a href="#" aria-label="Расположение">Карта штата</a></li>
+                    <li><a href="inner.html" aria-label="Гостиницы">Гостиницы</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <div class="hotel-filters">
@@ -157,20 +158,17 @@
         <div class="footer-social">
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="img/twitter.svg" alt="twitter" width="15" height="15">
+                    <a href="#" class="soc-icon soc-icon-tw">
                         <span class="visually-hidden">Мы в твитере</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="img/fb.svg" alt="facebook" width="15" height="15">
+                    <a href="#" class="soc-icon soc-icon-fb">
                         <span class="visually-hidden">Мы на фейсбуке</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="img/youtube.svg" alt="youtube" width="15" height="15">
+                    <a href="#" class="soc-icon soc-icon-youtube">
                         <span class="visually-hidden">Наш канал на ютуб</span>
                     </a>
                 </li>
@@ -179,7 +177,7 @@
         <div class="footer-copyright">
             <span>Website by</span>
             <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-            <img class="svg-icon" src="img/htmlacademy.svg" alt="HTML Академия" width="115" height="41">
+                <img class="svg-icon" src="img/htmlacademy.svg" alt="HTML Академия" width="115" height="41">
             </a>
         </div>
     </footer>
