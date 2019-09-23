@@ -1,19 +1,22 @@
-* {
+html {
     box-sizing: border-box;
-    box-shadow: 0 0 0 1px yellowgreen;
+}
+
+* {
+    /* box-shadow: 0 0 0 1px yellowgreen; */
+    /* поправить  */
 }
 
 body {
-
     margin: 0;
     padding: 0;
-
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #000000;
     text-transform: uppercase;
-    /* background-color: #f2f2f2; */
+    background-color: #f2f2f2;
+
 
 }
 
@@ -33,6 +36,7 @@ body {
 .main-header-logo {
     align-self: center;
     position: absolute;
+    top: 0;
 }
 
 
@@ -40,21 +44,40 @@ a {
     text-decoration: none;
 }
 
+
 .main-picture-section {
-    width: 1200px;
-    margin: 0 auto;
+    background-image: url("../img/background-photo.jpg");
+    background-position-y: -65px;
+    min-height: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+
+.polygon-img {
+    background-image: url("../img/polygon.png");
+    background-repeat: no-repeat;
+    min-height: 58px;
+    width: 100%;
 }
 
 
 
-.main-button {
-    font: inherit;
+
+.reservation-details .main-button {
     text-align: center;
     color: #ffffff;
     background-color: #81b3d2;
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
+    width: 458px;
+    padding-top: 17px;
+    padding-bottom: 21px;
+    margin: auto;
 
 }
 
@@ -67,12 +90,9 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.main-navigation-wrapper {
-    margin: 0 auto;
-    width: 1200px;
-    min-height: 56px;
-    background-color: pink;
-}
+.main-picture-section {}
+
+
 
 .main-navigation {
     display: flex;
@@ -80,14 +100,12 @@ a {
     background-color: #ffffff;
     font-size: 14px;
     line-height: 26px;
-    color: #000000;
+
     justify-content: initial;
     padding-left: 73px;
     padding-right: 73px;
 
 }
-
-
 
 .site-navigation {
     display: flex;
@@ -115,6 +133,19 @@ a {
 
 .welcome {
     text-align: center;
+    margin-top: 42px;
+
+
+}
+.wrap-filters{
+    background-color: pink;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px -4px rgba(0, 0, 0, .6);
 
 }
 
@@ -122,10 +153,22 @@ a {
     display: flex;
     margin-top: 58px;
     justify-content: space-between;
-    width: 1200px;
-    margin: auto;
+
+
 }
 
+.main-picture-section {
+    background-image: url("/img/background-photo.jpg");
+    width: 1200px;
+    background-size: cover;
+
+}
+
+.main-picture-section>img {
+    margin: auto;
+
+
+}
 
 
 .main-columns .introductory-information {
@@ -141,6 +184,14 @@ a {
 
 .introductory-information h3 {
     font-size: 21px;
+}
+
+.introductory-image img {
+    display: block;
+}
+
+.devil-bridge img {
+    display: block;
 }
 
 
@@ -162,7 +213,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding-top: 56px;
-    padding-bottom: 86px;
+
 
 }
 
@@ -209,11 +260,6 @@ a {
 }
 
 
-
-
-
-
-
 .devil-bridge {
     width: 1200px;
     margin: 0 auto;
@@ -244,13 +290,11 @@ a {
     margin: 0 auto;
     margin-top: 58px;
     margin-bottom: 55px;
-
 }
 
 .reservation span {
     font-size: 30px;
     font-weight: bold;
-
 }
 
 .reservation p {
@@ -259,17 +303,35 @@ a {
 
 .reservation-details {
     background-color: #ffffff;
+    width: 576px;
+    font-weight: bold;
+}
+
+.reservation-details fieldset {
+    border-style: none;
+    padding: 0;
+    min-height: 480px;
 
 }
 
-.reservation-details legend {
+.reservation-details .map-button {
     background-color: #766357;
     font-size: 21px;
+    text-transform: inherit;
     color: #ffff;
     line-height: 26px;
     width: 570px;
     text-align: center;
     padding: 20px;
+}
+
+.reservation-details .map-button:hover {
+    background-color: #604e43;
+}
+
+.reservation-details .map-button:active {
+    background-color: #503e33;
+    color: #857871;
 }
 
 .reservation-details label {
@@ -279,17 +341,17 @@ a {
     line-height: 26px;
 }
 
-.reservation-details input {
+.reservation-date input {
     font: inherit;
     border: none;
     background-color: #f2f2f2;
+    width: 346px;
+    height: 37px;
 }
 
 .main-footer {
     background-color: rgba(255, 255, 255, 0.9);
     min-height: 121px;
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -303,7 +365,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .footer-social .soc-icon {
@@ -316,18 +377,16 @@ a {
 }
 
 .soc-icon.soc-icon-fb {
-    background-image: url("/img/fb.svg");
+    background-image: url("../img/fb.svg");
 }
 
 .soc-icon.soc-icon-tw {
-    background-image: url("/img/twitter.svg");
+    background-image: url("../img/twitter.svg");
 }
 
 .soc-icon.soc-icon-youtube {
-    background-image: url("/img/youtube.svg");
+    background-image: url("../img/youtube.svg");
 }
-
-
 
 .footer-contacts a {
     text-transform: uppercase;
@@ -378,6 +437,10 @@ a {
     color: #ffffff;
 }
 
+.hotel-filters fieldset {
+    border: none;
+}
+
 .hotel-filters legend {
     color: #ffffff;
     font-size: 16px;
@@ -390,20 +453,70 @@ a {
 
 .hotels {
     list-style: none;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 
 }
 
-.hotel-name a {
+.hotels li {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 73px;
+    padding-right: 73px;
+}
+
+
+.hotels-found {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.hotels-found>p {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 73px;
+}
+
+.sort-buttons {
+    margin-left: 50px;
+    display: flex;
+    width: 968px;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+
+.sort-buttons p {
+    font-size: 12px;
+
+    line-height: 18px;
+}
+
+
+.hotel-name-list {
+    width: 259px;
+
+}
+
+.hotel-name-list a {
+
     font-size: 21px;
     font-weight: bold;
     color: #000000;
 }
 
-.hotel-name a:hover {
+.hotel-name-list a:hover {
     color: #81b3d2;
 }
 
-.hotel-name a:active {
+.hotel-name-list a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -452,6 +565,5 @@ a {
 }
 
 .map {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
 }
