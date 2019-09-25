@@ -2,10 +2,10 @@ html {
     box-sizing: border-box;
 }
 
-* {
-    /* box-shadow: 0 0 0 1px yellowgreen; */
-    /* поправить  */
-}
+/* * {
+    box-shadow: 0 0 0 1px yellowgreen;
+
+} */
 
 body {
     margin: 0;
@@ -19,6 +19,13 @@ body {
 
 
 }
+
+/* img{
+    width: 100%;
+    height:auto;
+} */
+
+
 
 .visually-hidden {
     position: absolute;
@@ -37,6 +44,8 @@ body {
     align-self: center;
     position: absolute;
     top: 0;
+    left: 50%;
+    margin-left: -60px;
 }
 
 
@@ -48,13 +57,12 @@ a {
 .main-picture-section {
     background-image: url("../img/background-photo.jpg");
     background-position-y: -65px;
-    min-height: 520px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
-    
+    min-height: 523px;
+
+
 }
 
 .polygon-img {
@@ -74,7 +82,6 @@ a {
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
-    width: 458px;
     padding-top: 17px;
     padding-bottom: 21px;
     margin: auto;
@@ -90,17 +97,12 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.main-picture-section {}
-
-
 
 .main-navigation {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     font-size: 14px;
-    line-height: 26px;
-
     justify-content: initial;
     padding-left: 73px;
     padding-right: 73px;
@@ -108,18 +110,23 @@ a {
 }
 
 .site-navigation {
-    display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 1056px;
     list-style: none;
-    min-height: 56px;
-    justify-content: space-between;
 }
 
+
 .site-navigation a {
+    display: block;
     color: #000000;
     font-weight: bold;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
 
 }
 
@@ -136,9 +143,6 @@ a {
     margin-top: 42px;
 
 
-}
-.wrap-filters{
-    background-color: pink;
 }
 
 .wrapper {
@@ -157,16 +161,10 @@ a {
 
 }
 
-.main-picture-section {
-    background-image: url("/img/background-photo.jpg");
-    width: 1200px;
-    background-size: cover;
 
-}
 
 .main-picture-section>img {
     margin: auto;
-
 
 }
 
@@ -184,6 +182,8 @@ a {
 
 .introductory-information h3 {
     font-size: 21px;
+    margin-top: 48px;
+    margin-bottom: 26px;
 }
 
 .introductory-image img {
@@ -275,7 +275,7 @@ a {
     width: 400px;
     flex-direction: column;
     align-items: center;
-    padding-top: 46px;
+
 
 }
 
@@ -359,7 +359,7 @@ a {
 }
 
 .footer-social ul {
-    width: 150px;
+    width: 156px;
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -393,6 +393,7 @@ a {
     color: #000000;
     font-size: 21px;
     font-weight: bold;
+    padding-left: 132px;
 }
 
 
@@ -420,7 +421,26 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding-right: 101px;
 
+}
+
+.footer-copyright a {
+    width: 115px;
+    height: 41px;
+}
+
+.footer-copyright a:hover path {
+    fill: #81b3d2;
+}
+
+.footer-copyright a:active path {
+    fill: #bdbbbc;
+}
+
+
+.footer-copyright span {
+    text-transform: uppercase;
 }
 
 .footer-copyright span {
@@ -432,8 +452,6 @@ a {
     background-image: url("/img/filter\ background.jpg ");
     background-color: #81b3d2;
     background-repeat: no-repeat;
-    width: 1200px;
-    margin: 0 auto;
     color: #ffffff;
 }
 
@@ -452,6 +470,7 @@ a {
 }
 
 .hotels {
+    position: relative;
     list-style: none;
     width: 1200px;
     margin: 0 auto;
@@ -459,7 +478,26 @@ a {
 
 }
 
+.hotels img {
+    display: block;
+}
+
+
+.hotels .inset-wrapper {
+    margin-left: 27px;
+}
+
+.hotels .stars {
+    background-image: url("../img/star.svg");
+    background-repeat-y: no-repeat;
+    width: 90px;
+    height: 23px;
+    display: block;
+
+}
+
 .hotels li {
+    display: flex;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -467,36 +505,92 @@ a {
     padding-right: 73px;
 }
 
+.hotels .stars-rating {
+    margin-left: 520px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 .hotels-found {
     display: flex;
     flex-direction: row;
-    width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
 
 }
 
-.hotels-found>p {
+.hotels-found >p {
     font-size: 21px;
     font-weight: bold;
     margin-left: 73px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 
 .sort-buttons {
+    font-size: 12px;
+    line-height: 18px;
     margin-left: 50px;
     display: flex;
-    width: 968px;
+    width: 854px;
     flex-direction: row;
     justify-content: space-between;
-   
 }
 
 
 .sort-buttons p {
-    font-size: 12px;
+   margin-top: 30px;
+}
 
-    line-height: 18px;
+.sort-buttons p button{
+    border:none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 0;
+    margin-right: 30px;
+}
+.sort-buttons .sort-active{
+    color: #81b3d2;
+    
+}
+.sort-buttons .sort-type-rating{
+    color: rgba(189, 187, 188, .7);
+    border-bottom: 1px dashed #81b3d2;
+    
+}
+.sort-buttons .sort-type-rating:hover{
+    color: #81b3d2; 
+} 
+
+.sort-buttons span{
+    margin-right: 27px;
+}
+.hotels-found .sort-up-down{
+    width: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 73px;
+}
+.sort-up-down button {
+    border: none;
+    padding: 0;
+}
+
+.sort-up-down .button-up path{
+    fill: #cacaca;
+}
+.sort-up-down .button-up:hover path{
+    fill: #231f20;
+}
+
+
+.sort-up-down .button-up:active path{
+    fill: #81b3d2;
 }
 
 
@@ -506,7 +600,6 @@ a {
 }
 
 .hotel-name-list a {
-
     font-size: 21px;
     font-weight: bold;
     color: #000000;
@@ -523,9 +616,10 @@ a {
 .hotels .button-details {
     color: #ffffff;
     background-color: #81b3d2;
-    padding: 5px 15px;
+    padding: 7px 15px;
     line-height: 26px;
     font-weight: bold;
+    margin-right: 7px;
 }
 
 .button-details:hover {
@@ -540,7 +634,7 @@ a {
 .hotels .button-order {
     color: #ffffff;
     background-color: #766357;
-    padding: 5px 15px;
+    padding: 7px 15px;
     line-height: 26px;
     font-weight: bold;
 }
