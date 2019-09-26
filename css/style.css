@@ -140,7 +140,7 @@ a {
 
 .welcome {
     text-align: center;
-    margin-top: 42px;
+    margin-bottom: 58px;
 
 
 }
@@ -153,20 +153,22 @@ a {
 
 }
 
-.main-columns {
-    display: flex;
-    margin-top: 58px;
-    justify-content: space-between;
+.basic-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
 
 }
-
-
+.main-picture-section{
+    margin-bottom: 47px;
+}
 
 .main-picture-section>img {
     margin: auto;
 
 }
+
 
 
 .main-columns .introductory-information {
@@ -179,6 +181,10 @@ a {
     align-items: center;
 
 }
+.basic-list h3{
+    font-size: 21px;
+    font-weight: bold;
+}
 
 .introductory-information h3 {
     font-size: 21px;
@@ -186,27 +192,26 @@ a {
     margin-bottom: 26px;
 }
 
-.introductory-image img {
+.basic-list img {
     display: block;
 }
-
-.devil-bridge img {
-    display: block;
+.introductory-image{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-
-.exelence-list {
-    display: flex;
-    list-style: none;
+.real-town{
+    width: 400px;
     text-align: center;
-    width: 1200px;
-    margin-left: 0;
-    margin-right: 0;
+    color: #ffffff;
+    background-color: #84b4d0;
+}
+.basic-list .advantages {
+    display:flex;
     padding: 0;
-    margin: auto;
 }
 
-.exelence-item {
+.advantages-item {
     width: 400px;
     min-height: 328px;
     display: flex;
@@ -214,74 +219,25 @@ a {
     align-items: center;
     padding-top: 56px;
 
-
 }
-
-.exelence-item h4 {
-    font-weight: bold;
-    font-size: 21px;
-}
-
-.exelence-item p {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #333333;
-}
-
-.exelence-item h4 {
-    font-weight: bold;
-    font-size: 21px;
-}
-
-.exelence-item p {
-    font-size: 14px;
-    font-weight: lighter;
-}
-
-.exelence-list-two {
-    list-style: none;
-    text-align: center;
-    flex-direction: row;
-    list-style: none;
-    text-align: center;
+.sub-advantages{
     display: flex;
-    width: 1200px;
-    padding-left: 0;
-    margin: 0 auto;
-
 }
 
-.exelence-item-two {
+.last-advantages{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+.last-item {
     background-color: #eeeeee;
     width: 400px;
     min-height: 255px;
     padding-top: 49px;
     padding-bottom: 55px;
-}
-
-
-.devil-bridge {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-    background-color: #81b3d2;
-    color: #ffffff;
-
-}
-
-.devil-bridge-information {
-    display: flex;
-    width: 400px;
-    flex-direction: column;
-    align-items: center;
-
-
-}
-
-.devil-bridge h4 {
-    font-weight: bold;
-    font-size: 21px;
 }
 
 .reservation {
@@ -521,11 +477,11 @@ a {
 
 }
 
-.hotels-found >p {
+.hotels-found>p {
     font-size: 21px;
     font-weight: bold;
     margin-left: 73px;
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -541,54 +497,60 @@ a {
 
 
 .sort-buttons p {
-   margin-top: 30px;
+    margin-top: 30px;
 }
 
-.sort-buttons p button{
-    border:none;
+.sort-buttons p button {
+    border: none;
     text-transform: uppercase;
     vertical-align: middle;
     padding: 0;
     margin-right: 30px;
 }
-.sort-buttons .sort-active{
+
+.sort-buttons .sort-active {
     color: #81b3d2;
-    
+
 }
-.sort-buttons .sort-type-rating{
+
+.sort-buttons .sort-type-rating {
     color: rgba(189, 187, 188, .7);
     border-bottom: 1px dashed #81b3d2;
-    
-}
-.sort-buttons .sort-type-rating:hover{
-    color: #81b3d2; 
-} 
 
-.sort-buttons span{
+}
+
+.sort-buttons .sort-type-rating:hover {
+    color: #81b3d2;
+}
+
+.sort-buttons span {
     margin-right: 27px;
 }
-.hotels-found .sort-up-down{
+
+.hotels-found .sort-up-down {
     width: 35px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-right: 73px;
 }
+
 .sort-up-down button {
     border: none;
     padding: 0;
 }
 
-.sort-up-down .button-up path{
+.sort-up-down .button-up path {
     fill: #cacaca;
 }
-.sort-up-down .button-up:hover path{
+
+.sort-up-down .button-up:hover path {
     fill: #231f20;
 }
 
 
-.sort-up-down .button-up:active path{
+.sort-up-down .button-up:active path {
     fill: #81b3d2;
 }
 
