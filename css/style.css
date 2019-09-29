@@ -220,6 +220,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .real-town h3 {
@@ -276,25 +277,28 @@ a {
     min-height: 255px;
 
 }
-.last-item h3{
+
+.last-item h3 {
     width: 125px;
     margin: 0;
 
 }
-.last-item p{
+
+.last-item p {
     width: 255px;
 
 }
-.search{
+
+.search {
     margin-bottom: 50px;
+
 }
 
 .reservation {
     text-align: center;
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 55px;
-    min-height: 292px;
+    min-height: 236px;
 }
 
 .reservation span {
@@ -303,10 +307,12 @@ a {
     font-weight: bold;
     line-height: 36px;
     margin-bottom: 27px;
-    
+
 }
- .coordinates{
+
+.coordinates {
     min-height: 593px;
+    position: relative;
 }
 
 .reservation p {
@@ -330,7 +336,6 @@ a {
 .reservation-details .reservation-children {
     margin-bottom: 53px;
 }
-
 
 .reservation-details .map-button {
     background-color: #766357;
@@ -391,6 +396,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-height: 121px;
+
 }
 
 .footer-social ul {
@@ -489,20 +496,19 @@ a {
     background-color: #81b3d2;
     background-repeat: no-repeat;
     color: #ffffff;
-}
 
-.hotel-filters fieldset {
-    border: none;
 }
 
 .hotel-filters legend {
     color: #ffffff;
     font-size: 16px;
     font-weight: bold;
+
 }
 
 .hotel-filters .infrastructure {
     list-style: none;
+    padding-left: 38px;
 }
 
 .hotels {
@@ -517,9 +523,8 @@ a {
     display: block;
 }
 
-
 .hotels .inset-wrapper {
-    margin-left: 27px;
+    margin-left: 32px;
 }
 
 .hotels .stars {
@@ -552,31 +557,23 @@ a {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
+    padding: 13px;
 
 }
 
-.hotels-found>p {
-    font-size: 21px;
-    font-weight: bold;
-    margin-left: 73px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 .sort-buttons {
     font-size: 12px;
     line-height: 18px;
-    margin-left: 50px;
+    margin-left: 46px;
+    margin-top:6px;
     display: flex;
     width: 854px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-
-.sort-buttons p {
-    margin-top: 30px;
-}
 
 .sort-buttons p button {
     border: none;
@@ -611,7 +608,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-right: 73px;
+    margin-right: 59px;
 }
 
 .sort-up-down button {
@@ -699,4 +696,96 @@ a {
 
 .map {
     width: 100%;
+}
+
+/* Внутренняя странца */
+
+
+.founded-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 59px;
+}
+
+.hotel-filters fieldset {
+    border: none;
+    width: 159px;
+    min-height: 157px;
+
+    text-align: left;
+
+    padding-left: 0;
+    padding-right: 6px;
+    margin-top: 27px;
+
+}
+
+.wrap-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 424px;
+
+}
+
+.cost-filter {
+    width: 328px;
+}
+
+.cost-filter p {
+    margin-top: 25px;
+}
+
+
+.cost-filter button {
+    padding: 8px 33px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid
+}
+
+.sticker{
+    margin-left: 74px;
+    margin-right: 74px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infrastructure input[type="checkbox"]+label {
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.infrastructure input[type="checkbox"] {
+    display: none;
+}
+
+.infrastructure input[type="checkbox"]+label:before {
+    content: "";
+    background-image: url("/img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 23px;
+    width: 27px;
+    left: -41px;
+    top: 1px;
+    position: absolute;
+    color: transparent;
+   
+}
+
+.infrastructure input[type="checkbox"]:checked+label:before {
+    background-image: url("/img/checkbox-on.svg");
+    background-position-x: 2px;
+
 }
