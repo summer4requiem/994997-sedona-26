@@ -117,48 +117,47 @@
       
 
       </section>
-      <section class="reservation">
-        <h4 class="visually-hidden">Поиск гостиницы в Седоне </h4>
-        <span>Заинтересовались?</span>
-        <p>Укажите предпалагемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </section>
-
-      <section class="coordinates">
-        <h5 class="visually-hidden">Мы находимся тут !</h5>
-        <img src="img/map.png" alt="Адрес туристического комплекса по адресу ул.Загородный  26, Санкт-Петербург"
-          width="1200">
-      </section>
-
-      <!-- <section class="reservation-details">
+    </section>
+    <section class="reservation">
+      <h4 class="visually-hidden">Поиск гостиницы в Седоне </h4>
+      <span>Заинтересовались?</span>
+      <p>Укажите предпалагемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    </section>
+    <!-- <div class="modal">kzkzkz</div>
+    Блок для кнопки  -->
+ <section class="reservation-details">
+        <button class="map-button">
+            Поиск гостиницы в Седоне
+          </button>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
-            <button class="map-button">
-              Поиск гостиницы в Седоне
-            </button>
-            <div>
+            <div class="reservation-wrap">
               <div class="reservation-date">
-                <label for="date">Дата заезда</label>
+                <label for="date">Дата заезда:</label>
                 <input id="date" type="text" name="data" placeholder="24 апреля 2017">
               </div>
               <div class="reservation-date">
-                <label for="departure">Дата выезда</label>
+                <label for="departure">Дата выезда:</label>
                 <input id="departure" type="text" name="departure" placeholder="4 июля 2017">
               </div>
               <div class="reservation-children">
                 <div>
-                  <label for="adult">Взрослые</label>
-                  <input id="adult" type="number" min="2" max="5" placeholder="2" name="adult">
+                  <label for="adult">Взрослые:</label>
+                  <input id="adult" type="text"  placeholder="2" name="adult">
                 </div>
                 <div>
-                  <label for="children">Дети</label>
-                  <input id="children" type="number" name="children" min="2" max="7" placeholder="0">
+                  <label for="children">Дети:</label>
+                  <input id="children" type="text" name="children" placeholder="0">
                 </div>
               </div>
               <button class="main-button" type="submit">Найти</button>
             </div>
-          </fieldset>
         </form>
-      </section> -->
+      </section>
+      <section class="coordinates">
+          <h5 class="visually-hidden">Мы находимся тут !</h5>
+          <img src="img/map.png" alt="Адрес туристического комплекса по адресу ул.Загородный  26, Санкт-Петербург"
+            width="1200">
+        </section>
     </main>
 
     <footer class="main-footer">
