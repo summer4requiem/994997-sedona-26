@@ -188,10 +188,22 @@ body {
 
 .features-list li {
     background: #d3d3d3;
-    padding: 48px;
+    padding: 33px;
     text-align: center;
     width: 400px;
+    min-height: 255px;
 }
+.features-list li:nth-child(7){
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-list li:nth-child(8){
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 li.special-feature{
     width: 100%;
@@ -468,10 +480,6 @@ margin-right: 5px;
     padding-left: 11px;
     width: 336px;
     margin-bottom: 30px;
-    /* background-image: url("/img/calendar.svg");
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-position: 312px, 10px; */
 }
 
 .reservation-date label {
@@ -498,6 +506,16 @@ margin-right: 5px;
     position: absolute;
     bottom: 0;
 }
+.inner-footer{
+    background-color: rgba(255, 255, 255, .9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 121px;
+    width: 100%;
+}
+
 
 .footer-social ul {
     width: 156px;
@@ -620,11 +638,14 @@ margin-right: 5px;
 
 .hotels .stars {
     background-image: url("../img/star.svg");
-    background-repeat-y: no-repeat;
-    width: 90px;
-    height: 23px;
-    display: block;
+    background-repeat: space;
+    height: 20px;
 }
+.stars.top-liner{
+    width: 93px;
+    
+}
+
 
 .hotels li {
     display: flex;
@@ -834,24 +855,55 @@ margin-right: 5px;
 }
 
 .cost-filter p {
-    margin-top: 23px;
+    margin-top: 25px;
     font-weight: bold;
-    margin-left: 13px;
+    margin-left: 16px;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.filter-price span {
+.filter-price div {
     display: inline-block;
     border-right: 1px;
     width: 152px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
+    height: 22px;
+}
+.slider-range{
+    width: 306px;
+    height: 2px;
+    position: relative;
+    margin-bottom: 31px;
+    background: linear-gradient(to right, #fff 85%, #8a7f7f 25%);
+    margin-left: 27px;
+}
+.slider-range::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 21px;
+    background-image: url(/img/filter-button.svg);
+    position: absolute;
+    top: -9px;
+    left: -11px;
+}
+.slider-range::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 21px;
+    background-image: url(/img/filter-button.svg);
+    position: absolute;
+    top: -9px;
+    right: 45px;
+
 }
 
 .filter-price {
     border: 2px solid white;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
     margin-left: 14px;
 }
 
@@ -862,7 +914,7 @@ margin-right: 5px;
     font-size: 14px;
     line-height: 21px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 2px solid white;
     align-self: center;
     color: white;
 }
