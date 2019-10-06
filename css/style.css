@@ -173,7 +173,7 @@ body {
 
 .main-picture-section>img {
     margin: auto;
-    margin-top: 76px;
+    margin-top: 72px;
 
 }
 
@@ -216,12 +216,20 @@ li.special-feature{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding: 54px;
+    padding-top: 55px;
+    padding-bottom: 63px;
+  }
+  .feature-extra-list li > img{
+      margin-bottom: 13px;
+
   }
   .feature-info {
     width: 400px;
     min-height: 257px;
-    padding: 41px;
+    padding: 31px;
+  }
+  .feature-info > p{
+  margin-bottom: 27px;
   }
   .number-wrap{
     display: flex;
@@ -233,7 +241,8 @@ li.special-feature{
   }
   .features-list h3 {
     padding:  0 88px;
-    font-size: 1.4em ;
+    font-size: 21px ;
+    margin-bottom: 11px;
   }
 
 
@@ -297,6 +306,7 @@ li.special-feature{
 
 .reservation p {
     color: #333333;
+    margin-bottom: 44px;
 }
 
 
@@ -426,9 +436,9 @@ margin-right: 5px;
     text-transform: uppercase;
     color: #ffff;
     line-height: 26px;
-    min-width: 576px;
-    padding-top: 25px;
-    padding-bottom: 20px;
+    min-width: 565px;
+    padding-top: 29px;
+    padding-bottom: 32px;
 
 }
 
