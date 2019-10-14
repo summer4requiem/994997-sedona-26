@@ -47,7 +47,7 @@
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="feature-image">
-              <img src="img/intro-picture.jpg" alt="Фото самые красивые места для отдыха" width="800">
+              <img src="img/intro-picture.jpg" alt="Фото самые красивые места для отдыха" width="100%">
             </div>
             <ul class="feature-extra-list">
               <!-- <h4 class="visually-hidden">Преимущетсва отдыха у нас</h4> -->
@@ -70,7 +70,7 @@
 
           <li class="special-feature ">
             <div class="feature-image">
-              <img src="img/canyon.jpg" alt="У нас можно пройтись по мосту дьявола" width="800">
+              <img src="img/canyon.jpg" alt="У нас можно пройтись по мосту дьявола" width="100%">
             </div>
             <div class="feature-info">
               <h3>Там есть <br>Мост дьявола</h3>
@@ -113,11 +113,11 @@
         <p>Укажите предпалагемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
         <button class="map-button"> Поиск гостиницы в Седоне </button>
-        <form class="reservation-form visually-hidden" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="reservation-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form-row">
             <div class="field-group">
               <label for="date">Дата заезда:</label>
-              <input id="date" type="text" name="data" placeholder="24 апреля 2017">
+              <input id="date" type="text" name="check-in" placeholder="24 апреля 2017">
               <button class="input-btn date-btn"></button>
             </div>
           </div>
@@ -128,24 +128,18 @@
               <button class="input-btn date-btn"></button>
             </div>
           </div>
-          <div class="form-row">
-            <div>
+          <div class="form-row small-row">
+            <div class="small-field">
               <label for="adult">Взрослые:</label>
-              <div class="number-wrap">
               <button class="input-btn min-btn"></button>
               <input class="input-number" id="adult" type="text" placeholder="2" name="adult">
               <button class="input-btn plus-btn"></button>
-              </div>
             </div>
-            <div>
+            <div class="small-field-2">
               <label for="children">Дети:</label>
-                <div class="number-wrap">
-                <button class="input-btn min-btn">
-
-                </button>
-                <input class="input-number" id="children" type="text" name="children" placeholder="0">
-                <button class="input-btn plus-btn"></button>
-              </div>
+              <button class="input-btn min-btn"></button>
+              <input class="input-number" id="children" type="text" name="children" placeholder="0">
+              <button class="input-btn plus-btn"></button>
             </div>
           </div>
           <button class="main-button" type="submit">Найти</button>
@@ -153,8 +147,13 @@
       </section>
       <section class="coordinates">
         <h5 class="visually-hidden">Мы находимся тут !</h5>
-        <img src="img/map.png" alt="Адрес туристического комплекса по адресу ул.Загородный  26, Санкт-Петербург"
-          width="1200">
+        <span class="visually-hidden">Адрес туристического комплекса по адресу ул.Загородный 26, Санкт-Петербург"</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52384.9562668659!2d-111.82191818160996!3d34.85472554780805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1570467492416!5m2!1sru!2sru"
+          width="100%" height="595" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        <!-- <img src="img/map.png" alt="
+          width="1200"> -->
+        <!-- спросить у Германа о правильности реализации этой части  через bi -->
       </section>
     </main>
 
@@ -189,6 +188,7 @@ v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-
         </a>
       </div>
     </footer>
+    <script src="./js/map-popup.js"></script>
 </body>
 
 </html>
