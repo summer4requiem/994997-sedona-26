@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Гостиницы</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic"
-    rel="stylesheet">
+  <link href="fonts/ptsans.zip" >
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet"> -->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -77,7 +77,7 @@
             <div class="slider-range"></div>
             <!-- <div id="slider-range"></div>
             <div id="slider-range"></div> -->
-              <button type="submit">Показать</button>
+            <button type="submit">Показать</button>
           </div>
         </div>
       </form>
@@ -85,30 +85,30 @@
 
 
     <div class="hotels-found">
-      
-        <div class="founded-number">
-          <p>Найдено:</p>
-          <div> 3 </div>
-        </div>
-        <div class="sort-buttons">
-          <p>
-            <span>сортировка:</span>
-            <button type="button" class="sort-active">По цене</button>
-            <button type="button" class="sort-type-rating">По типу</button>
-            <button type="button" class="sort-type-rating">По рейтингу</button>
-          </p>
-        </div>
-        <div class="sort-up-down">
-          <button type="button" class="button-up">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
-          </button>
-          <button type="button" class="button-up">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
-          </button>
-        </div>
-  
+
+      <div class="founded-number">
+        <p>Найдено:</p>
+        <div> 3 </div>
+      </div>
+      <div class="sort-buttons">
+        <p>
+          <span>сортировка:</span>
+          <button type="button" class="sort-active">По цене</button>
+          <button type="button" class="sort-type-rating">По типу</button>
+          <button type="button" class="sort-type-rating">По рейтингу</button>
+        </p>
+      </div>
+      <div class="sort-up-down">
+        <button type="button" class="button-up">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+        </button>
+        <button type="button" class="button-up">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+        </button>
+      </div>
+
 
     </div>
 
@@ -119,14 +119,18 @@
         </a>
         <div class="inset-wrapper">
           <div class="hotel-name-list">
-            <a href="">Amara Resort & Spa</a>
+            <a href="">amara resort & spa</a>
           </div>
+          <div class="flex-grouper">
           <p>
-           <span> гостиница</span>
-           <span> от 4000 р.</span>
+            <span>гостиница</span>
+            <a class="button-details" href="">подробнее</a>
           </p>
-          <a class="button-details" href="">подробнее</a>
-          <a class="button-order" href="">забронировать</a>
+          <p>
+            <span> от 4000 р.</span>
+            <a class="button-order" href="">забронировать</a>
+          </p>
+        </div>
         </div>
         <div class="stars-rating">
           <div class="stars top-liner"></div>
@@ -135,45 +139,54 @@
       </li>
 
       <li>
-          <a href="">
-            <img src="img/desert.png" alt="Фото гостиницы в горах" width="135" height="90">
-          </a>
-          <div class="inset-wrapper">
-            <div class="hotel-name-list">
-              <a href="">Desert Quail Inn</a>
-            </div>
-            <p>
-              <span>мотель</span>
+        <a href="">
+          <img src="img/desert.png" alt="Фото гостиницы в горах" width="135" height="90">
+        </a>
+        <div class="inset-wrapper">
+          <div class="hotel-name-list">
+            <a href="">Desert Quail Inn</a>
+          </div>
+          <div class="flex-grouper">
+          <p>
+            <span>мотель</span>
+            <a class="button-details" href="">подробнее</a>    
+          </p>
+          <p>
               <span> от 3000 р.</span>
-            </p>
+              <a class="button-order" href="">забронировать</a>   
+        </p>
+      </div>
+        </div>
+        <div class="stars-rating">
+          <div class="stars second-liner"></div>
+          <span class="rating">рейтинг:8,9</span>
+        </div>
+      
+      </li>
+      <li>
+        <a href="">
+          <img src="img/villas.png" alt="Фото гостиницы в горах" width="135" height="90">
+        </a>
+        <div class="inset-wrapper">
+          <div class="hotel-name-list">
+            <a href="">Villas at Poco Diablo</a>
+          </div>
+          <div class="flex-grouper"> 
+          <p>
+            <span>апартаменты</span>
             <a class="button-details" href="">подробнее</a>
-            <a class="button-order" href="">забронировать</a>
-          </div>
-          <div class="stars-rating">
-            <div class="stars second-liner"></div>
-            <span class="rating">рейтинг:8,9</span>
-          </div>
-        </li>
-        <li>
-            <a href="">
-              <img src="img/villas.png" alt="Фото гостиницы в горах" width="135" height="90">
-            </a>
-            <div class="inset-wrapper">
-              <div class="hotel-name-list">
-                <a href="">Villas at Poco Diablo</a>
-              </div>
-              <p>
-                <span>апартаменты</span>
-                <span> от 2000 р.</span>
-              </p>
-              <a class="button-details" href="">подробнее</a>
-              <a class="button-order" href="">забронировать</a>
-            </div>
-            <div class="stars-rating">
-              <div class="stars third-liner"></div>
-              <span class="rating">рейтинг:9,2</span>
-            </div>
-          </li>
+          </p>
+          <p>
+          <span> от 2000 р.</span>
+          <a class="button-order" href="">забронировать</a>
+        </p>
+        </div>
+      </div>
+        <div class="stars-rating">
+          <div class="stars third-liner"></div>
+          <span class="rating">рейтинг:9,2</span>
+        </div>
+      </li>
     </ul>
 
     <footer class="inner-footer">
