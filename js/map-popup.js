@@ -5,9 +5,15 @@ var datefield = popup.querySelector("[name=check-in]");
 
 mapButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.toggle("form-show");
+    popup.classList.toggle("form-hide");
     datefield.focus();
 });
+   popup.classList.toggle("form-hide");
+ 
+
+
+
+
 
 
 

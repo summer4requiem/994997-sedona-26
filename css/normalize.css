@@ -96,6 +96,9 @@
   strong {
     font-weight: bolder;
   }
+  button {
+    cursor: pointer;
+}
   
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.

@@ -4,17 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="main-header">
+    <header>
       <nav class="main-navigation" aria-label="содержимое сайта">
         <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" width="139" alt="Седона">
+          <img src="img/logo.svg" width="139" alt="Логотип-сайта">
         </a>
         <ul class="site-navigation">
           <li><a href="">Информация</a></li>
@@ -27,152 +26,123 @@
     <main>
       <h1 class="visually-hidden">Поиск жилья в маленьком американском городке!</h1>
       <div class="main-picture-section">
-        <img src="img/intro-welcome.svg" width="459" alt="">
+        <img src="img/intro-welcome.svg" width="459" alt="Добро подаловать в Седону!">
       </div>
       <section class="welcome">
         <div>
-          <h2>Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</h2>
+          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-
       </section>
-
       <section class="features">
         <ol class="features-list">
           <li class="special-feature">
             <div class="feature-info">
-              <h3>Настоящий городок</h3>
+              <div class="caption">Настоящий городок</div>
               <p> — №1 —</p>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p>Седона — не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
             </div>
             <div class="feature-image">
               <img src="img/intro-picture.jpg" alt="Фото самые красивые места для отдыха" width="100%">
             </div>
             <ul class="feature-extra-list">
-              <!-- <h4 class="visually-hidden">Преимущетсва отдыха у нас</h4> -->
-              <li>
-                <img src="img/house.svg" alt="Рекомендуем пожить в настоящем мотеле!" width="75">
-                <h3>Жилье</h3>
+              <h4 class="visually-hidden">Преимущества отдыха у нас</h4>
+              <li class="extra-feature-item">
+                <div class="extra-icon house"></div>
+                <div class="caption">Жилье</div>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li><img src="img/burger.svg" alt="Заказывайте фирменный бургер" width="75" height="72">
-                <h3>Еда</h3>
+              <li class="extra-feature-item">
+                <div class="extra-icon food"></div>
+                <div class="caption">Еда</div>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="advantages-item">
-                <img src="img/gift.svg" alt="У нас есть сувениры местного производства!" width="75" height="72">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства</p>
+              <li class="extra-feature-item">
+                <div class="extra-icon gift"></div>
+                <div class="caption">Сувениры</div>
+                <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-
-          <li class="special-feature ">
+          <li class="special-feature">
             <div class="feature-image">
               <img src="img/canyon.jpg" alt="У нас можно пройтись по мосту дьявола" width="100%">
             </div>
             <div class="feature-info">
-              <h3>Там есть <br>Мост дьявола</h3>
+              <div class="caption">Там есть<br>Мост дьявола</div>
               <p> — №2 — </p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p>Да, по нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
             </div>
           </li>
-
           <li>
-            <h3>Небольшая
-              площадь</h3>
+            <div class="caption">Небольшая площадь</div>
             <p>— №3 —</p>
-            <p>Все достопримечательности
-              находятся очень близко</p>
+            <p>Все достопримечательности находятся очень близко</p>
           </li>
-
           <li>
-            <h3>Красивая
-              дорога
-            </h3>
+            <div class="caption">Красивая дорога</div>
             <p>— №4 —</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем
-              не скучно!</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li>
-            <h3>Мало туристов
-            </h3>
-            <p>
-              — №5 —
-            </p>
-            <p>Большинство едет в гранд каньон
-              и толпится там</p>
+            <div class="caption">Мало туристов</div>
+            <p> — №5 — </p>
+            <p>Большинство едет в гранд каньон и&nbsp;толпится там</p>
           </li>
         </ol>
       </section>
       <section class="reservation">
-        <h4 class="visually-hidden">Поиск гостиницы в Седоне </h4>
-        <span>Заинтересовались?</span>
+        <h3 class="visually-hidden">Поиск гостиницы в Седоне </h3>
+        <div class="reservation-title">Заинтересовались?</div>
         <p>Укажите предпалагемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-        <button class="map-button"> Поиск гостиницы в Седоне </button>
+        <button type="button" class="map-button"> Поиск гостиницы в Седоне </button>
         <form class="reservation-form" action="https://echo.htmlacademy.ru" method="POST">
-        
           <div class="form-row">
             <div class="field-group">
               <label for="date">Дата заезда:</label>
               <input id="date" type="text" name="check-in" placeholder="24 апреля 2017">
-              <button class="input-btn date-btn"></button>
+              <button type="button" class="input-btn date-btn"></button>
             </div>
           </div>
           <div class="form-row">
             <div class="field-group">
               <label for="departure">Дата выезда:</label>
               <input id="departure" type="text" name="departure" placeholder="4 июля 2017">
-              <button class="input-btn date-btn"></button>
+              <button type="button" class="input-btn date-btn"></button>
             </div>
           </div>
           <div class="form-row small-row">
             <div class="small-field">
               <label for="adult">Взрослые:</label>
-              <button class="input-btn min-btn"></button>
+              <button type="button" class="input-btn min-btn"></button>
               <input class="input-number" id="adult" type="text" placeholder="2" name="adult">
-              <button class="input-btn plus-btn"></button>
+              <button type="button" class="input-btn plus-btn"></button>
             </div>
             <div class="small-field-2">
               <label for="children">Дети:</label>
-              <button class="input-btn min-btn"></button>
+              <button type="button" class="input-btn min-btn"></button>
               <input class="input-number" id="children" type="text" name="children" placeholder="0">
-              <button class="input-btn plus-btn"></button>
+              <button type="button" class="input-btn plus-btn"></button>
             </div>
           </div>
           <button class="main-button" type="submit">Найти</button>
-        
         </form>
       </section>
       <section class="coordinates">
-        <h5 class="visually-hidden">Мы находимся тут !</h5>
-        <span class="visually-hidden">Адрес туристического комплекса по адресу ул.Загородный 26, Санкт-Петербург"</span>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52384.9562668659!2d-111.82191818160996!3d34.85472554780805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1570467492416!5m2!1sru!2sru"
-          width="100%" height="595" frameborder="0" style="border:0;" allowfullscreen></iframe>
-        <!-- <img src="img/map.png" alt="
-          width="1200"> -->
-        <!-- спросить у Германа о правильности реализации этой части  через bi -->
+        <h4 class="visually-hidden">Мы находимся тут !</h4>
+        <!-- <span class="visually-hidden"></span> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.467530781428!2d-111.76069498476323!3d34.86960438039145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da3e251059e65%3A0x8e8cc925b289e6af!2sAmara%20Resort%20and%20Spa!5e0!3m2!1sen!2sru!4v1571317369391!5m2!1sen!2sru" width="100%" height="595px" frameborder="0" style="border:0;" allowfullscreen="" title="Адрес туристического комплекса по адресу ул.Загородный 26, Санкт-Петербург" ></iframe>
       </section>
     </main>
-
     <footer class="main-footer">
       <div class="footer-contacts">
-        <a href="">#visitSEDONA</a>
+         <a href="" aria-label="Узнать больше" >#visitSEDONA</a>
       </div>
       <div class="footer-social">
         <ul>
-          <li>
-            <a href="" class="soc-icon soc-icon-tw" aria-label="Мы в твитере"></a>
-          </li>
-          <li>
-            <a href="" class="soc-icon soc-icon-fb" aria-label="Мы на фейсбуке"></a>
-          </li>
-          <li>
-            <a href="" class="soc-icon soc-icon-youtube" aria-label="Наш канал на ютуб"></a>
-          </li>
+          <li><a href="" class="soc-icon soc-icon-tw" aria-label="Мы в твитере"></a></li>
+          <li><a href="" class="soc-icon soc-icon-fb" aria-label="Мы на фейсбуке"></a></li>
+          <li><a href="" class="soc-icon soc-icon-youtube" aria-label="Наш канал на ютуб"></a></li>
         </ul>
       </div>
       <div class="footer-copyright">
