@@ -56,7 +56,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-
+    padding-top: 73px;
     min-height: 508px;
     margin-bottom: 64px;
 }
