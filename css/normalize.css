@@ -41,7 +41,9 @@
     font-size: 2em;
     margin: 0.67em 0;
   }
-  
+  iframe{
+    border: none;
+  }
   /* Grouping content
      ========================================================================== */
   
@@ -99,6 +101,7 @@
   button {
     cursor: pointer;
 }
+
   
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.

@@ -15,11 +15,6 @@ html {
     box-sizing: inherit;
 }
 
-* {
-   outline: dashed 2px red;
-
-}
-
 a {
     text-decoration: none;
 }
@@ -294,7 +289,6 @@ li.special-feature {
 }
 
 
-
 .sub-advantages {
     display: flex;
     flex-wrap: wrap;
@@ -417,6 +411,7 @@ li.special-feature {
 
 .input-btn {
     display: inline-block;
+    vertical-align: middle;
     border: none;
     background: #f2f2f2;
     width: 38px;
@@ -737,7 +732,6 @@ li.special-feature {
     justify-content: space-between;
     border-bottom: 1px solid #e5e5e5;
     padding: 13px;
-
 }
 
 .sort-buttons {
@@ -801,8 +795,6 @@ li.special-feature {
 .sort-up-down .button-up:hover path {
     fill: #231f20;
 }
-
-
 .sort-up-down .button-up:active path {
     fill: #81b3d2;
 }
@@ -870,15 +862,12 @@ li.special-feature {
     color: #666666;
     background-color: #f2f2f2;
     padding: 5px 15px;
-    font-size: 14px;
+   font-size: 14px;
 }
 
 .map {
     width: 100%;
 }
-
-/* Внутренняя странца */
-
 
 .founded-number {
     display: flex;
@@ -889,7 +878,6 @@ li.special-feature {
     font-weight: bold;
     margin-left: 56px;
 }
-
 .hotel-filters fieldset {
     border: none;
     width: 159px;
@@ -898,17 +886,13 @@ li.special-feature {
     padding-left: 0;
     padding-right: 26px;
     margin-top: 27px;
-
 }
-
 .wrap-filters {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 424px;
-
 }
-
 .cost-filter {
     display: flex;
     flex-wrap: wrap;
@@ -916,7 +900,6 @@ li.special-feature {
     width: 328px;
     margin-left: 14px;
 }
-
 .cost-filter p {
     margin-top: 25px;
     font-weight: bold;
@@ -924,10 +907,10 @@ li.special-feature {
     margin-bottom: 10px;
     font-size: 16px;
 }
-
 .filter-price div {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     border-right: 1px;
     width: 152px;
     padding-top: 5px;
@@ -936,7 +919,6 @@ li.special-feature {
     height: 22px;
     border-radius: 3px;
 }
-
 .filter-price div:first-of-type::after {
     content: "";
     position: absolute;
@@ -944,9 +926,7 @@ li.special-feature {
     width: 2px;
     height: 22px;
     background-color: #ffff;
-
 }
-
 .slider-range {
     width: 306px;
     height: 2px;
@@ -956,7 +936,6 @@ li.special-feature {
     margin-left: 27px;
     cursor: pointer;
 }
-
 .slider-range::before {
     content: "";
     display: block;
@@ -967,15 +946,12 @@ li.special-feature {
     top: -9px;
     left: -11px;
 }
-
 .slider-range:hover::before {
     transform: scale(1.1);
 }
-
 .slider-range:hover::after {
     transform: scale(1.1);
 }
-
 .slider-range::after {
     content: "";
     display: block;
@@ -985,16 +961,12 @@ li.special-feature {
     position: absolute;
     top: -9px;
     right: 45px;
-
 }
-
 .filter-price {
     border: 2px solid white;
     margin-bottom: 21px;
     margin-left: 14px;
 }
-
-
 .cost-filter button {
     padding: 4px 33px;
     text-transform: uppercase;
@@ -1005,34 +977,27 @@ li.special-feature {
     align-self: center;
     color: white;
 }
-
 .cost-filter button:hover {
     background-color: #fff;
     color: #000;
 }
-
 .sticker {
     margin-left: 74px;
     margin-right: 74px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-
 .infrastructure input[type="checkbox"]+label {
     display: block;
     position: relative;
     margin-bottom: 25px;
     cursor: pointer;
-
 }
-
 
 .infrastructure input[type="checkbox"] {
     display: none;
 }
-
 .infrastructure input[type="checkbox"]+label:before {
     content: "";
     background-image: url("../img/checkbox-off.svg");
@@ -1044,10 +1009,26 @@ li.special-feature {
     top: 1px;
     position: absolute;
     color: transparent;
-
 }
-
 .infrastructure input[type="checkbox"]:checked+label:before {
     background-image: url("../img/checkbox-on.svg");
     background-position-x: 2px;
 }
+
+ 
+.map-insurance {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.map-offline{
+    display: none;
+}
+
+iframe{
+    border: none;
+    
+ }
+
+

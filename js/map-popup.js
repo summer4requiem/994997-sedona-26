@@ -1,6 +1,7 @@
 var mapButton =  document.querySelector(".map-button");
 var popup = document.querySelector(".reservation-form");
 var datefield = popup.querySelector("[name=check-in]");
+var mapShow = document.querySelector(".map-insurance");
 
 
 mapButton.addEventListener("click", function (evt) {
@@ -10,7 +11,7 @@ mapButton.addEventListener("click", function (evt) {
 });
    popup.classList.toggle("form-hide");
  
-
+mapShow.classList.add("map-offline");
 
 
 
